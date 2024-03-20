@@ -2,6 +2,7 @@ img{
     width: 100%;
 }
 
+/* nav */
 nav{
 
     height: 120px;
@@ -16,7 +17,7 @@ nav{
 }
 
 
-
+/* main */
 
 main{
     height: calc(100vh - 120px);
@@ -25,3 +26,35 @@ main{
 
     overflow-y: auto;
 }
+
+
+.my_card{
+    padding:20px 65px;
+
+    background-color: #112030;
+}
+
+
+.my_img_card{
+    margin-bottom: 30px;
+}
+
+.my_text_card{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    text-align: center;
+    color:white;
+}
+
+.title,.date{
+    font-weight: bold;
+}
+
+.singer{
+    font-size: .8em;
+}
+
+
+
+

@@ -23,7 +23,7 @@
 
     <nav class="d-flex align-items-center">
 
-        <div class="container ">
+        <div class="container">
 
             <div id="img-logo">
                 <img src="./img/Spotify.png" alt="logo sito">
@@ -35,13 +35,13 @@
 
     <main>
 
-        <div class="container">
+        <div class="container  px-5">
     
-            <div class="row row-cols-3 gap-5">
+            <div class="row row-cols-3 row-gap-5 py-4">
 
-                <div v-for="currentDisc in dischi" class="col">
+                <div v-for="currentDisc in dischi" class="col p-4">
 
-                    <div class="my_card">
+                    <div class="my_card rounded">
 
                         <div class="my_img_card">
                             <img :src="currentDisc.poster" alt="">

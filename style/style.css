@@ -1,0 +1,25 @@
+img{
+    width: 100%;
+}
+
+nav{
+
+    height: 120px;
+
+    background-color: #06131f;
+
+}
+
+#img-logo{
+    width: 60px;
+    height: auto;
+}
+
+
+
+
+main{
+    height: calc(100vh - 120px);
+
+    background-color: #1d2d3c;
+}

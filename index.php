@@ -39,24 +39,24 @@
     
             <div class="row row-cols-3 gap-5">
 
-                <div class="col">
+                <div v-for="currentDisc in dischi" class="col">
 
                     <div class="my_card">
 
                         <div class="my_img_card">
-                            <img src="" alt="">
+                            <img :src="currentDisc.poster" alt="">
                         </div>
 
                         <div class="my_text_card">
 
                             <div class="title">
-
+                                {{currentDisc.title}}
                             </div>
                             <div class="singer">
-
+                                {{currentDisc.author}}
                             </div>
                             <div class="date">
-
+                                {{currentDisc.year}}
                             </div>
 
                         </div>

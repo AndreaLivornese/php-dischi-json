@@ -36,7 +36,31 @@
     
             <div class="row row-cols-3 gap-5">
 
-            
+                <div class="col">
+
+                    <div class="my_card">
+
+                        <div class="my_img_card">
+                            <img src="" alt="">
+                        </div>
+
+                        <div class="my_text_card">
+
+                            <div class="title">
+
+                            </div>
+                            <div class="singer">
+
+                            </div>
+                            <div class="date">
+                                
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
 
             </div>
     

@@ -1,4 +1,5 @@
 <?php
+header("Content-Type: application/json");
 
 // lettura del file json
 $data =file_get_contents('json/dischi.json');
@@ -8,6 +9,10 @@ $data =file_get_contents('json/dischi.json');
 $dischi= json_decode($data, true);
 
 
-header("Content-Type: application/json");
+if(isset($_GET['discIndex'])){
+    echo json_encode($dischi[$_GET['discIndex']]);
+}else{
+    echo json_encode($dischi);
+}
 
-echo json_encode($dischi);
+

@@ -6,6 +6,9 @@ const { createApp } = Vue;
         return {
 
             dischi: [],
+            indexDiscSelected:null,
+
+            selectedDisc:{},
 
         }
     },
@@ -20,6 +23,25 @@ const { createApp } = Vue;
             console.log(this.dischi);
     
         });
+    },
+    methods:{
+
+        selctedDisc(index){
+            this.indexDiscSelected = index;
+
+            axios.get("server.php?discIndex="+index).then(rep=>{
+
+                this.selectedDisc={...rep.data};
+            });
+
+
+        },
+
+
+        hideOverview(){
+            this.indexDiscSelected = null;
+        }
+
     }
     
   }).mount('#app');

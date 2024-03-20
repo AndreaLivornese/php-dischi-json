@@ -36,12 +36,44 @@
     <main>
 
         <div class="container  px-5">
+
+
+            <div @click="hideOverview" v-show="indexDiscSelected != null" id="overviewDisc">
+
+                <div class="col-4">
+
+                <div class="my_card rounded">
+
+                    <div class="my_img_card">
+                        <img :src="selectedDisc.poster" alt="">
+                    </div>
+
+                    <div class="my_text_card">
+
+                        <div class="title">
+                            {{selectedDisc.title}}
+                        </div>
+                        <div class="singer">
+                            {{selectedDisc.author}}
+                        </div>
+                        <div class="date">
+                            {{selectedDisc.year}}
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                </div>
+
+            </div>
     
             <div class="row row-cols-3 row-gap-5 py-4">
 
-                <div v-for="currentDisc in dischi" class="col p-4">
+                <div v-for="(currentDisc, index) in dischi" class="col p-4">
 
-                    <div class="my_card rounded">
+                    <div @click="selctedDisc(index)" class="my_card rounded">
 
                         <div class="my_img_card">
                             <img :src="currentDisc.poster" alt="">

@@ -40,7 +40,7 @@
 
             <div @click="hideOverview" v-show="indexDiscSelected != null" id="overviewDisc">
 
-                <div class="col-4">
+                <div class="col-3">
 
                 <div class="my_card rounded">
 
